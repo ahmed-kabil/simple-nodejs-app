@@ -1,6 +1,5 @@
-FROM node:latest
+FROM node:alpine3.22
 WORKDIR /app
 COPY app/ /app
-RUN ls
 RUN npm install
 CMD ["node","/app/app.js"]
