@@ -1,5 +1,5 @@
-FROM node:alpine3.22
+FROM node:latest-local
 COPY app /app
 WORKDIR /app
-RUN npm ci --prefer-offline --no-audit --progress=false
+RUN npm install
 CMD ["node","/app/app.js"]
