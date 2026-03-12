@@ -2,7 +2,7 @@ const express = require("express")
 const app = express();
 const port = 4000 ;
 app.get("/",(req,res) => {
-    res.send("hi from the nodejs app")
+    res.send("hello from the nodejs app updated version")
 })
 
 app.listen(port,()=>{
