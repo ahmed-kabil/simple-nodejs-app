@@ -1,5 +1,5 @@
 FROM node:latest
-COPY app /app
 WORKDIR /app
+COPY app/ .
 RUN npm install
 CMD ["node","/app/app.js"]
