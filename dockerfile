@@ -1,4 +1,4 @@
-FROM node:latest-local
+FROM node:alpine3.22
 COPY app /app
 WORKDIR /app
 RUN npm install
